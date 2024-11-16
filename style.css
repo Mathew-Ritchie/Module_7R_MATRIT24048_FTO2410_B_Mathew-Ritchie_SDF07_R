@@ -484,7 +484,7 @@ header {
 }
 
 .portfolia-item-image-wrapper img {
-  width: 350px;
+  max-width: 350px;
   border: 3px solid var(--clt-dark);
   transition: 2s ease-in-out 0s;
 }
@@ -493,4 +493,12 @@ header {
   transform: scale(150%);
   transition: 2s ease-in-out 0s;
   box-shadow: 0 0 10px #ffae03;
+}
+
+@media screen and (max-width: 1080px) {
+  .portfolia-item-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
